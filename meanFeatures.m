@@ -1,5 +1,5 @@
 function means = meanFeatures(x,y)
-%MEANFEATURES obtain 
+%MEANFEATURES obtain a matrix with the mean of features per classes
 % 
 
 if min(y) == 0; classesNumber = max(y) +1 ; else classNumber = max(y); end
