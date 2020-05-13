@@ -1,25 +1,24 @@
 clear all 
+
 [xtrn, ytrn] = loadDataSet();
 
 %%
 clear model prediction error
-
-model = trainModel(xtrn,ytrn);
-prediction = evaluateModel(xtrn, model);
+   
+model = train(xtrn,ytrn);
+prediction = evalue(xtrn, model);
 error = costFunction(prediction,ytrn)
 
 
 %%
 clear examplesIndex examples class prediction error
 
-examplesIndex = [113];
+examplesIndex = [113, 5 10];
 examples = xtrn(examplesIndex,:);
 class = ytrn(examplesIndex);
-prediction = evaluateModel(examples,model);
+prediction = evalue(examples,model);
 
 error = costFunction(prediction,class)
-
-
 
 
 
