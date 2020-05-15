@@ -29,7 +29,8 @@ prediction = evalue(xtrn, model);
 error = costFunction(prediction,ytrn)
 
 
-%%
+%% Error using some indexes
+
 clear examplesIndex examples class prediction error
 
 examplesIndex = [113, 5 10];
